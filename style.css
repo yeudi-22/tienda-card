@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+:root{
+--Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+/* Neutral */
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+--fuente1: 'Montserrat';
+--fuente2: 'Fraunces';
+
+
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    font-weight: 500;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: var(--Cream);
+    font-family: var(--fuente1);
+    
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-gray);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+
+.card{
+
+flex-basis: 290px;
+display: grid;
+background-color: var(--White);
+border-radius: 15px;
+margin-top: 5rem;
+
+
+}
+
+@media (min-width: 768px){
+    .card {
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 2rem;
+    } 
+}
+
+
+
+
+
+.card__tag{
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: var(--fuente1);
+    color: var(--Dark-grayish-blue);
+    margin: 1.1rem -.1rem;
+    cursor: pointer;
+
+}
+
+.card__title{
+    font-weight: 700;
+    font-size: 35px;
+    font-family: 'Fraunces';
+    margin-bottom: 1.1rem;
+    
+}
+
+.card__description{
+    color: var(--Dark-grayish-blue);
+    margin-bottom: 1.1rem;
+    line-height: 25px;
+    font-size: 14px;
+    
+}
+
+.card__precio{
+    font-family: var(--fuente2);
+    font-size: 35px;
+    color: var(--Dark-cyan);
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+}
+
+.card__precio span{
+    font-family: var(--fuente1);
+    font-size: 15px;
+    color: var(--Dark-grayish-blue);
+    margin: 0 1rem;
+    text-decoration: line-through;
+}
+
+.card__img{
+    width: 400px;
+    height: 270px;
+    border-radius: 14px;
+    
+}
+.article{
+    
+    width: 100%;
+    padding: 1rem;
+
+}
+
+
+
+@media (min-width: 768px){
+    
+    
+    .card__img{
+        grid-column: 1/2;
+        width: 300px;
+        border-radius: 14px;
+        height: 100%;
+        margin: 0;
+        
+        
+        
+        }
+        
+        .article{
+            grid-column: 2/3;
+            width: 100%;
+            
+        
+        }
+
+}
+
+
+.card__button{
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    border-radius: 13px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+     
+   cursor: pointer;
+}
+
+.card__button img {
+margin: 0 .5rem;
+}
